@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../stylef.css">
+    <link rel="stylesheet" href="../styleh.css">
+</head>
+<body>
+    <header>
+        <h1>IPlast</h1>
+    </header>
+    <main>
+        <button class="btn-novo" id="openModal">Novo Produto</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Va.custo</th>
+                    <th>Va.final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Arroz Branco</td>
+                    <td>R$2,00</td>
+                    <td>R$10,00</td>
+                    <td>
+                        <button class="btn-editar">Editar</button>
+                        <button class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">X</span>
+                <h2>Cadastre um Produto</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Descrição" required>
+                    <input type="number" placeholder="Valor custo" required>
+                    <input type="number" placeholder="Valor final" required>
+                    <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>Feito por João Lucas Ribeiro Leite</h3>
+    </footer>
+</body>
+<script src="../script.js"></script>
+</html>
